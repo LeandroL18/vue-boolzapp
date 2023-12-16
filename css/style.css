@@ -110,5 +110,15 @@
     bottom: 0;
     right: 0;
     display: flex;
+    align-items: center;
 }
-
+#bottom i{
+    color: gray;
+    padding: 20px;
+}
+#bottom input{
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
