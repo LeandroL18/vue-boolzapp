@@ -100,11 +100,14 @@
     overflow-y: scroll;
     position: relative;
 }
+
 .bg_gray{
     width: 100%;
     height: 50px;
     background-color: rgb(228, 228, 228);
 }
+
+/* Stili riga bottom */
 #bottom{
     position: absolute;
     bottom: 0;
@@ -121,4 +124,20 @@
     border: none;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Stili  messaggi */
+
+.messaggio{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sent{  
+    background-color: rgb(179, 246, 124);   
+}
+
+.received{
+    background-color: white;
 }
