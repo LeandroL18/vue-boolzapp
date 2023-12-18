@@ -23,7 +23,7 @@
                 <div id="main">
                     <div id="friends">
                         <!-- Riga profilo -->
-                        <div id="profilo" class="bg_gray">
+                        <div id="profilo" class="bg_gray flex">
                             <div>
                                 <img class="image" :src="profile.avatar" alt="avatar_io">
                                 <h4>{{profile.name}}</h4>
@@ -59,8 +59,17 @@
                     <hr>
                     <!-- Finestra chat -->
                     <div id="chat">
-                        <!-- Riga amico con cui chatti -->
-                        <div id="top" class="bg_gray"></div>
+                        <!-- Riga specifica amico -->
+                        <div id="top" class="bg_gray flex">
+                            <div>
+                                
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-paperclip"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
 
                         <!-- Messaggi -->
                         <p class="messaggio sent">Ciao</p>

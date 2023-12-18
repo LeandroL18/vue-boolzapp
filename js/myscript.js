@@ -3,7 +3,6 @@ const {createApp} = Vue;
 createApp ({
     data(){
         return{
-
             profile: {
                 name: 'Sofia',
                 avatar: './img/avatar_io.jpg',
