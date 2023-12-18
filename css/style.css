@@ -135,9 +135,13 @@
 }
 
 .sent{  
-    background-color: rgb(179, 246, 124);   
+    background-color: rgb(179, 246, 124);
+    margin-left: 410px;
+    margin-top: 10px;   
 }
 
 .received{
     background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
 }
