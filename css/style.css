@@ -9,6 +9,10 @@
     color: rgb(154, 153, 153);
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* Stili container generali */
 #wrapper{
     position: relative;
@@ -64,9 +68,12 @@
 #notifiche a{
     font-size: 11.5px;
     color: gray;
-    clear: both;
 }
-
+#notifiche a::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /* Stili riga ricerca */
 #ricerca{
@@ -91,6 +98,42 @@
     padding: 2.5px;
     border: 1px solid rgb(207, 207, 207);
 }
+
+/* Stili visualizzazione contatti */
+#friends li{
+    position: relative;
+}
+#friends li img{
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+#friends li hr{
+    margin-top: 5px;
+    color: rgb(212, 212, 212);
+}
+#friends li h4{
+    margin-top: 5px;
+}
+#friends li h6{
+    color: gray;
+}
+#friends li h6::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#friends li span{
+    color: gray;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+
 
 /* Stili finestra chat */
 #chat{

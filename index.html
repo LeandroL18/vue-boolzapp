@@ -19,27 +19,45 @@
             <div id="wrapper">
                 <div id="row_green"></div>
                 <div id="row_gray"></div>
+                <!-- Finestra principale -->
                 <div id="main">
                     <div id="friends">
+                        <!-- Riga profilo -->
                         <div id="profile" class="bg_gray"></div>
+                        <!-- Riga notifiche -->
                         <div id="notifiche">
                             <i class="fa-solid fa-bell-slash"></i>
                             <h5>Ricevi notifiche di nuovi messaggi</h5>
                             <a href="#">Attiva notifiche desktop</a>
                         </div>
+                        <!-- Riga ricerca -->
                         <div id="ricerca">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
+                        <!-- Visualizzazione contatti -->
+                        <ul>
+                            <li v-for="(contatti, i) in contacts" :key="i">
+                                <img :src="contacts[i].avatar" alt="Img">
+                                <h4>{{contacts[i].name}}</h4>
+                                <h6>Ultimo messaggio inviato</h6>
+                                <span>12:00</span>
+                                <hr>
+                            </li>
+                        </ul>
                     </div>
                     <hr>
+                    <!-- Finestra chat -->
                     <div id="chat">
+                        <!-- Riga amico con cui chatti -->
                         <div id="top" class="bg_gray"></div>
 
+                        <!-- Messaggi -->
                         <p class="messaggio sent">Ciao</p>
                         <p class="messaggio received">Ciao</p>
                         <p class="messaggio sent">Ciao</p>
 
+                        <!-- Riga input messaggi -->
                         <div id="bottom" class="bg_gray">
                             <i class="fa-regular fa-face-smile"></i>
                             <input type="text" placeholder="Scrivi un messaggio">
