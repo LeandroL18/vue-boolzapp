@@ -114,6 +114,10 @@ ul{
 /* Stili visualizzazione contatti */
 #friends li{
     position: relative;
+    padding-bottom: 5px;
+}
+#friends li:hover{
+    background-color:rgb(228, 228, 228); 
 }
 .image{
     width: 15%;
@@ -123,11 +127,8 @@ ul{
     float: left;
 }
 #friends li hr{
-    margin-top: 5px;
+    margin-bottom: 5px;
     color: rgb(212, 212, 212);
-}
-h4{
-    margin-top: 5px;
 }
 #friends li h6{
     color: gray;
@@ -141,25 +142,22 @@ h4{
     color: gray;
     font-size: 10px;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 5px;
 }
-
-
 
 /* Stili finestra chat */
 #chat{
     flex-grow: 1;
     background-image: url(../img/sfondo.png);
     background-size: contain;
-    overflow-y: scroll;
     position: relative;
 }
 
 .bg_gray{
     width: 100%;
     height: 50px;
-    background-color: rgb(228, 228, 228);
+    background-color:rgb(228, 228, 228); 
 }
 
 /* Stili riga bottom */

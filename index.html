@@ -48,11 +48,11 @@
                         <!-- Visualizzazione contatti -->
                         <ul>
                             <li v-for="(contatti, i) in contacts" :key="i">
+                                <hr>
                                 <img class="image" :src="contacts[i].avatar" alt="Img">
                                 <h4>{{contacts[i].name}}</h4>
                                 <h6>Ultimo messaggio inviato</h6>
                                 <span>12:00</span>
-                                <hr>
                             </li>
                         </ul>
                     </div>
