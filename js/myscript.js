@@ -6,7 +6,7 @@ createApp ({
 
             profile: {
                 name: 'Sofia',
-                avatar: './img/avatar_io.png',
+                avatar: './img/avatar_io.jpg',
             },
 
             contacts: [

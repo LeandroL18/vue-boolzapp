@@ -46,6 +46,18 @@ ul{
     background-color: white;
 }
 
+/* Stili riga profilo */
+#profilo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+#profilo i{
+    display: inline;
+    margin: 0 5px;
+}
+
 /* Stili riga notifiche */
 #notifiche{
     width: 100%;
@@ -103,7 +115,7 @@ ul{
 #friends li{
     position: relative;
 }
-#friends li img{
+.image{
     width: 15%;
     border-radius: 50%;
     margin-left: 10px;
@@ -114,7 +126,7 @@ ul{
     margin-top: 5px;
     color: rgb(212, 212, 212);
 }
-#friends li h4{
+h4{
     margin-top: 5px;
 }
 #friends li h6{

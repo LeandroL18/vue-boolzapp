@@ -23,7 +23,17 @@
                 <div id="main">
                     <div id="friends">
                         <!-- Riga profilo -->
-                        <div id="profile" class="bg_gray"></div>
+                        <div id="profilo" class="bg_gray">
+                            <div>
+                                <img class="image" :src="profile.avatar" alt="avatar_io">
+                                <h4>{{profile.name}}</h4>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-notch"></i>
+                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
                         <!-- Riga notifiche -->
                         <div id="notifiche">
                             <i class="fa-solid fa-bell-slash"></i>
@@ -38,7 +48,7 @@
                         <!-- Visualizzazione contatti -->
                         <ul>
                             <li v-for="(contatti, i) in contacts" :key="i">
-                                <img :src="contacts[i].avatar" alt="Img">
+                                <img class="image" :src="contacts[i].avatar" alt="Img">
                                 <h4>{{contacts[i].name}}</h4>
                                 <h6>Ultimo messaggio inviato</h6>
                                 <span>12:00</span>
